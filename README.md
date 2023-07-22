@@ -27,7 +27,7 @@ To run `lsstream`, type the following command in your command line:
 > python -m lsstream.main
 ```
 
-Follow the on-screen prompts to make simplify streaming! :sparkles:
+Simply follow the on-screen prompts to streamline your streaming experience! :sparkles:
 
 ## 💡 Features
 
@@ -41,4 +41,8 @@ This project is licensed under the MIT License.
 
 ## ❗ Issues
 
-If you encounter any issues, please post them [here](https://github.com/username/repository/issues).
+If you encounter any issues, please post them [here](https://github.com/Wermutton/lsstream/issues).
+
+<div align="center">
+    <h2>🎉 Happy Streaming! 🎉</h2>
+</div>
