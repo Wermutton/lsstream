@@ -1,6 +1,7 @@
 <div align="center">
-    <h1><b>lsstream</b></h1>
+    <img src="https://raw.githubusercontent.com/Wermutton/lsstream/main/assets/lsstream.png" alt="lsstream">
 </div>
+
 <p align="center">
   A nifty utility to assist the tech-savvy students of ASU's SILC LSS with their Streaming Requests. Say goodbye to tedium! 😴 🖥️ 🎞️
 </p>
