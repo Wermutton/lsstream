@@ -7,3 +7,5 @@ intro = Figlet(font='big')
 # Just coloring for fun
 def color(text, color='yellow'):
     return colored(text, color, attrs=["bold"])
+
+print("hey")
