@@ -1,9 +1,9 @@
 import os
 import webbrowser
-from style import intro, color
-from file_generation import create_content
-from prompts import prompt_test_html
-from test import test_html
+from .style import intro, color
+from .file_generation import create_content
+from .prompts import prompt_test_html
+from .test import test_html
 
 # Delete current batch of html files
 def end_session(new_files, new_contents):
@@ -20,7 +20,7 @@ def end_session(new_files, new_contents):
             print(color('B: Test the media(s)?', 'cyan'))
             print(color('C: Remove the newly created files and restart?', 'red'))
             print(color('D: End session?', 'green'))
-            continue_prompt = input(color('What would you like to do? (', 'white') + color('A', 'yellow') + color('/', 'white') + color('B', 'cyan') + color('/', 'white') + color('C', 'red') + + color('D', 'green') + color('): ', 'white'))
+            continue_prompt = input(color('What would you like to do? (', 'white') + color('A', 'yellow') + color('/', 'white') + color('B', 'cyan') + color('/', 'white') + color('C', 'red') + color('/', 'white') + color('D', 'green') + color('): ', 'white'))
             
             if continue_prompt.lower() == 'a':
                 lsstream()

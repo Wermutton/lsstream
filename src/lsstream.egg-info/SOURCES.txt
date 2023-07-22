@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/lsstream/__init__.py
+src/lsstream/file_generation.py
+src/lsstream/main.py
+src/lsstream/prompts.py
+src/lsstream/style.py
+src/lsstream/template.py
+src/lsstream/test.py
+src/lsstream.egg-info/PKG-INFO
+src/lsstream.egg-info/SOURCES.txt
+src/lsstream.egg-info/dependency_links.txt
+src/lsstream.egg-info/requires.txt
+src/lsstream.egg-info/top_level.txt

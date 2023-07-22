@@ -1,7 +1,7 @@
 import os
-from template import TEMPLATE_1     # choose the template you want
-from style import color
-from prompts import prompt_directory, prompt_details
+from .template import TEMPLATE_1     # choose the template you want
+from .style import color
+from .prompts import prompt_directory, prompt_details
 
 # Creates the files and returns its contents
 def create_file(movie_title, media_link, output_directory):

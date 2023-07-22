@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lsstream"
+version = "0.0.1"
+authors = [
+  { name="Wermutton", email="redacted@redacted.redacted" },
+]
+description = "To help lazy tech boys and girls at ASU's SILC LSS with Streaming Requests 😴 🖥️ 🎞️"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+  "pyfiglet",
+  "termcolor"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Wermutton/lsstream"
+"Bug Tracker" = "https://github.com/Wermutton/lsstream/issues"
