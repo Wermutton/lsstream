@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://raw.githubusercontent.com/Wermutton/lsstream/main/assets/lsstream.png" width="450" alt="lsstream">
+    <img src="https://raw.githubusercontent.com/Wermutton/lsstream/main/assets/lsstream.png" width="300" alt="lsstream">
 </div>
 
 <p align="center">
