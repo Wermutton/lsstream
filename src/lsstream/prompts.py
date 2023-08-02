@@ -1,4 +1,4 @@
-from style import color
+from .style import color
 import os
 import configparser
 
