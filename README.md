@@ -20,12 +20,24 @@ Install the `lsstream` package via pip through your command line:
 > pip install lsstream
 ```
 
+or
+
+```bash
+> pip3 install lsstream
+```
+
 ## 🎯 Usage
 
 To run `lsstream`, type the following command in your command line:
 
 ```bash
-> python -m lsstream.main
+> python -m lsstream.run
+```
+
+or
+
+```bash
+> python3 -m lsstream.run
 ```
 
 Simply follow the on-screen prompts to streamline your streaming experience! :sparkles:
