@@ -11,7 +11,12 @@ def test_html(contents):
     webbrowser.open('file://' + os.path.realpath('temp.html'))
 
 
-# Opens a "Default Test page" on canvas so users can test it 
+test_page_opened = False
+
 def open_canvas_test_page():
-    webbrowser.open(TEST_PAGE)
+    global test_page_opened
+    if not test_page_opened:
+        webbrowser.open(TEST_PAGE)
+        test_page_opened = True
+
 
