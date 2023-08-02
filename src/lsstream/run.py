@@ -1,9 +1,9 @@
 import os
 import webbrowser
-from .style import intro, color
-from .file_generation import create_content
-from .prompts import prompt_test_html
-from .test import test_html
+from style import intro, color
+from file_generation import create_content
+from prompts import prompt_test_html
+from test import test_html, open_canvas_test_page
 
 # Delete current batch of html files
 def end_session(new_files, new_contents):
@@ -48,7 +48,8 @@ def end_session(new_files, new_contents):
 def lsstream():    
     new_files, new_contents = create_content()
 
-    if prompt_test_html(new_contents): test_html(new_contents)
+    # if prompt_test_html(new_contents): test_html(new_contents)
+    if prompt_test_html(): open_canvas_test_page()
 
     end_session(new_files, new_contents) 
 
