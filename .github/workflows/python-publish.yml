@@ -22,6 +22,8 @@ jobs:
           pip install build
       - name: Remove old dist files
         run: rm -rf dist/*
+      - name: Update .egg-info
+        run: python setup.py egg_info
       - name: Build package
         run: python -m build
       - name: Publish package
