@@ -1,6 +1,6 @@
 import webbrowser
-from defaults import TEST_PAGE
 import os
+from .defaults import TEST_PAGE
 
 # Tests the .txt contents on Browser
 def test_html(contents):
