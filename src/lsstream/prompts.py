@@ -1,4 +1,4 @@
-from style import color
+from .style import color
 import os
 import configparser
 
@@ -42,7 +42,8 @@ def prompt_details():
 # Prompts users if they want to test the links
 def prompt_test_html():
     test_prompt = input(color('\nWould you like to try out the embed code(s) on the test page? (Y/N): '))
-    if test_prompt.lower() == 'y':
+    if test_prompt.lower() == 'ez': return "secret"
+    if test_prompt.lower() == 'y' or test_prompt.lower() == '':
         return True
     
 def prompt_update_preferred_directory():
@@ -63,7 +64,7 @@ def prompt_update_preferred_directory():
         with open(CONFIG_FILE, 'w') as config_file:
             config.write(config_file)
 
-    print(color("Preferred directory updated successfully!", 'white'))
+    print(color("Preferred directory updated successfully!", None))
 
     return new_directory
 

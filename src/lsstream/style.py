@@ -9,5 +9,8 @@ init()
 intro = Figlet(font='big')
 
 # Just coloring for fun
-def color(text, color='green'):
-    return colored(text, color, attrs=["bold"])
+def color(text, color='green', attrs=None):
+    default_attrs = ['bold']
+    if attrs:
+        default_attrs.extend(attrs)
+    return colored(text, color, attrs=default_attrs)

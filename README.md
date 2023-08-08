@@ -45,8 +45,7 @@ Simply follow the on-screen prompts to streamline your streaming experience! :sp
 ## 💡 Features
 
 - **Batch File Generation**: Generates multiple .txt files in a snap. Just input your media titles and links, and `lsstream` will use the correct template to create your files.
-- **Embed Code Testing**: Say goodbye to waiting! Test the embed code instantly and make sure everything works perfectly.
-- **Color-Coded Interface**: The output isn't just useful, it's also pretty. With cool colors enhancing readability, `lsstream` is truly a feast for your eyes!
+- **Embed Code Testing**: Say goodbye to waiting! Test the embed code almost instantaneously and make sure everything works perfectly. Codes are copied to your clipboards and
 
 ## 📝 License
 
