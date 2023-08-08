@@ -1,8 +1,8 @@
 import os
 import pyperclip
-from .defaults import EMBED_TEMPLATE    
-from .style import color
-from .prompts import prompt_directory, prompt_details
+from defaults import EMBED_TEMPLATE    
+from style import color
+from prompts import prompt_directory, prompt_details
 
 # Creates the files and returns its contents
 def create_file(movie_title, media_link, output_directory):
@@ -35,9 +35,9 @@ def create_content():
         new_files.append(new_file)
         new_contents.append(new_content)  
 
-        continue_prompt = input(color('\nContinue? (Y/N): ', 'white'))
+        continue_prompt = input(color('\nWould you like to create another embed code file? (Y/N): '))
         if continue_prompt.lower() != 'y':
-            print('\n', color(f"✔ Embed code(s) for {', '.join(movie_titles)} successfully pasted to clipboard!", 'green'))
+            print('\n', color(f"✔ Embed code(s) for {', '.join(movie_titles)} successfully pasted to clipboard!", 'white'))
             break
     
     pyperclip.copy('\n'.join(embed_contents))

@@ -2,4 +2,4 @@
 
 EMBED_TEMPLATE = '<a href="{LINK}">Click for {TITLE}</a>'
 
-TEST_PAGE = 'https://canvas.asu.edu/courses/26086/pages/test-page'
+TEST_PAGE = 'https://canvas.asu.edu/courses/26086/pages/test-page/edit'

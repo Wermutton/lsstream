@@ -1,4 +1,4 @@
-from .style import color
+from style import color
 import os
 import configparser
 
@@ -17,7 +17,7 @@ def prompt_directory():
             return config[SECTION_NAME][KEY_NAME]
 
     # If we didn't return above, we need to ask the user for the directory
-    output_directory = input(color('\nWhere do you want the files stored?: ', 'white'))
+    output_directory = input(color('\nWhere do you want the files stored?: '))
     if not os.path.isdir(output_directory):
         print(color("Invalid directory, please enter a valid directory.", 'red'))
         return prompt_directory()
@@ -35,13 +35,13 @@ def prompt_directory():
 # Prompt users for movie details
 def prompt_details():
     movie_title = input(color('\nEnter the Media Title: '))
-    media_link = input(color('\nEnter the Media Link: '))
+    media_link = input(color('\nEnter the Media Embed Code: '))
 
     return movie_title, media_link
 
 # Prompts users if they want to test the links
 def prompt_test_html():
-    test_prompt = input(color('\nDo you want to test the media(s)? (Y/N): ', 'cyan'))
+    test_prompt = input(color('\nWould you like to try out the embed code(s) on the test page? (Y/N): '))
     if test_prompt.lower() == 'y':
         return True
     
@@ -63,7 +63,7 @@ def prompt_update_preferred_directory():
         with open(CONFIG_FILE, 'w') as config_file:
             config.write(config_file)
 
-    print(color("Preferred directory updated successfully!", 'green'))
+    print(color("Preferred directory updated successfully!", 'white'))
 
     return new_directory
 
