@@ -42,7 +42,7 @@ def end_session(new_files, new_contents):
                 if os.path.exists('temp.html'):
                     os.remove('temp.html')
                     
-                print(color(f'\n✔ Done!', 'green'))
+                print(color(f'\nGreat work!', None))
                 break
             else:
                 print(color('\nInvalid option, please choose A, B, C or D.', 'red'))
