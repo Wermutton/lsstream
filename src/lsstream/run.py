@@ -1,10 +1,9 @@
 import os
-import configparser
 from .style import intro, color
 from .file_generation import create_content
 from .prompts import prompt_test_html
 from .test import test_html, open_canvas_test_page
-from .prompts import CONFIG_FILE, SECTION_NAME, KEY_NAME
+from .defaults import default_directory
  
 
 # Delete current batch of html files
@@ -62,16 +61,10 @@ def lsstream():
 
 
 def main():
-    print(color(intro.renderText('LSSTREAM')))
+    print(color(intro.renderText('lsstream')))
 
-    config = configparser.ConfigParser()
-
-    if os.path.exists(CONFIG_FILE):
-        config.read(CONFIG_FILE)
-        if SECTION_NAME in config and KEY_NAME in config[SECTION_NAME]:
-            directory_name = config[SECTION_NAME][KEY_NAME]
-            directory_name = color(directory_name, None, attrs=["underline"])
-            print(f"Your embed code files will be stored in {directory_name}")
+    if default_directory() is not None:
+        print(f"Your embed code files will be stored in {default_directory()}")
         
     lsstream() 
 

@@ -1,6 +1,6 @@
-from .style import color
 import os
 import configparser
+from .style import color
 
 CONFIG_FILE = 'config.ini'
 SECTION_NAME = 'Settings'
@@ -35,7 +35,7 @@ def prompt_directory():
 # Prompt users for movie details
 def prompt_details():
     movie_title = input(color('\nEnter the Media Title: '))
-    media_link = input(color('\nEnter the Media Embed Code: '))
+    media_link = input(color('\nEnter the Media Link: '))
 
     return movie_title, media_link
 
@@ -45,7 +45,8 @@ def prompt_test_html():
     if test_prompt.lower() == 'ez': return "secret"
     if test_prompt.lower() == 'y' or test_prompt.lower() == '':
         return True
-    
+
+# To update preferred directory (not used yet!)   
 def prompt_update_preferred_directory():
     config = configparser.ConfigParser()
 
