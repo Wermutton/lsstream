@@ -6,6 +6,11 @@ from .style import color
 
 EMBED_TEMPLATE = '<iframe src="{LINK}" width="640" height="360" allow="fullscreen"></iframe>'
 
+TEST_PAGE_TEMPLATE = '''
+<div style="font-size: large; font-weight: bold;">{TITLE}</div>
+<iframe src="{LINK}" width="640" height="360" allow="fullscreen"></iframe>
+'''
+
 TEST_PAGE = 'https://canvas.asu.edu/courses/26086/pages/test-page/edit'
 
 

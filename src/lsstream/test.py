@@ -5,10 +5,26 @@ from .defaults import TEST_PAGE
 # Tests the .txt contents on Browser
 def test_html(contents):
     with open('temp.html', 'w') as f:
+        f.write('<html><head><style>')
+        f.write('''
+        .video-container {
+            position: relative;
+        }
+        .title {
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: white;
+            background-color: rgba(0,0,0,0.7);
+            padding: 5px;
+        }
+        </style></head><body>''')
         for content in contents:
             f.write(content + '\n')
+        f.write('</body></html>')
         
     webbrowser.open('file://' + os.path.realpath('temp.html'))
+
 
 
 # test_page_opened = False
