@@ -45,7 +45,7 @@ Simply follow the on-screen prompts to streamline your streaming experience! :sp
 ## 💡 Features
 
 - **Batch File Generation**: Generates multiple .txt files in a snap. Just input your media titles and links, and `lsstream` will use the correct template to create your files.
-- **Embed Code Testing**: Say goodbye to waiting! Test the embed code almost instantaneously and make sure everything works perfectly. Codes are copied to your clipboards and
+- **Embed Code Testing**: Test the embed code almost instantaneously to make sure everything works perfectly. Codes are copied to your clipboards, so just paste them on SILC's testing page (if they still have one) and the media should be playable.
 
 ## 📝 License
 
